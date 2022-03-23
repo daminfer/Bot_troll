@@ -46,6 +46,10 @@ client.on("messageCreate", async message => {
             message.reply("https://www.youtube.com/watch?v=wyU4Oa7t6SE");
         }
 
+        else if (message.content.toLowerCase().indexOf('matthieu') !== -1){
+            message.reply("https://tenor.com/view/je-mennuie-ennuyer-sennuyer-gif-12160582");
+        }
+
         else if (message.content.toLowerCase().indexOf('nico') !== -1){
             message.reply("https://www.youtube.com/watch?v=OtF9c4dZyR0");
         }
@@ -144,10 +148,35 @@ client.on("messageCreate", async message => {
                 // On appel La fonction Ecriture:
                 Ecriture();
             }
+
+            if (command === "kiwiception") {
+                function Ecriture(){
+                    try {
+                        console.log(message.attachments.toJSON()[0]["url"]);
+                    } catch (e) {
+                        console.log(e.name + ": " + e.message);
+                        message.reply("Ta oublier l'image");
+                    }
+
+                    if (ARGS.length >= 2 ){
+                        let option = { args: [ command, ARGS[0], message.attachments.toJSON()[0]["url"], ARGS[1], ARGS[2]]}
+                        PythonShell.run("kiwi.py",option,function(err,results){
+                            console.log('resultat: %j', results);
+                            console.log("fin du code pyhton");
+                            message.reply({files: ["./kiwi.png"]});
+                        })
+                    }
+                    else{
+                        message.reply("Nan, j'ai la flemme ;)\n https://tenor.com/view/carte-kiwi-sncf-kiwi-mister-j-day-j-day-gif-19975329 ");
+                    }
+                } 
+                // On appel La fonction Ecriture:
+                Ecriture();               
+            }
             
             if (command === "help") {
                 message.reply(
-                    "Voici la liste des commandes:\n\n   !cat => Répond avec un gif de chat aléatoire\n   !gif Paramètre1 Paramètre2 ... ParamètreN => Répond avec un gif rechercher aléatoirement, on peut avec les paramètres orienté la recherche\n   !kiwi NOM PRENOM IMAGE => Renvoie une image carte kiwi, ne pas oublier d'uplod une image (3ème argument) "
+                    "Voici la liste des commandes:\n\n   !cat => Répond avec un gif de chat aléatoire\n   !gif Paramètre1 Paramètre2 ... ParamètreN => Répond avec un gif rechercher aléatoirement, on peut avec les paramètres orienté la recherche\n   !kiwi NOM PRENOM IMAGE => Renvoie une image carte kiwi, ne pas oublier d'uplod une image (3ème argument)\n   !kiwiception Nom Prenom Nb IMAGE => Baser sur le model de !kiwi, rèpete le motife de la carte dans l'emplacement photo un nombre Nb de fois"
                 );
             }
 
