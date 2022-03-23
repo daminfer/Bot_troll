@@ -12,6 +12,17 @@ J'ai également ajouté des commandes pour les amateur de spam et de gif de chat
 - [Python Module requests](https://fr.python-requests.org/en/latest/user/install.html) => ``` pip install requests ```
 - [Pillow(PIL)](https://pillow.readthedocs.io/en/stable/installation.html) => ``` python3 -m pip install --upgrade pip ``` et ``` python3 -m pip install --upgrade Pillow ```
 
+⚠️ATTENTION: Le fichier config.json doit être remplie par vos soin:
+
+```
+{
+    "PREFIX": "Vous pouvez choisir le caractère de votre choix, le préfixe sert a reconnaitre l'execution d'une commande ex: PREFIXcat => la commande cat est interpréter",
+    "clientId":"ID de votre bot",
+    "guildId":"ID du serveur dans lequel vous envoyer bot",
+    "token":"TOKEN secret de votre bot"
+}
+```
+
 # Utilisation:
 
 Pour lancer le bot, on tape dans le terminal:
