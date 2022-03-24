@@ -58,6 +58,10 @@ client.on("messageCreate", async message => {
             message.reply({files: ["./image/damintroll.png"]});
         }
 
+        else if (message.content.toLowerCase().indexOf('windows') !== -1){
+            message.reply("https://tenor.com/view/linux-linux-is-better-why-linux-is-better-shitdos-windows-gif-19494703");
+        }
+
         else if (message.content.toLowerCase().indexOf('tchou') !== -1){
             for (let i = 0; i < 10; i++){
                 // Mettre tchoutchou en image pour plus de vitesse
