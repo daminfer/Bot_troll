@@ -1,6 +1,6 @@
 # Bot_troll
-Voici un bot qui a pour objectif de troll un peu nos camarades. A chaque fois qu'un de nos nom est utiliser le bot envoie une image/citation/gif relatif a la personne.
-J'ai également ajouté des commandes pour les amateur de spam et de gif de chat ❤️
+Voici un bot qui a pour objectif de troll un peu nos camarades. Chaque fois qu'un de nos noms est utilisé le bot envoie une image/citation/gif relative à la personne.
+J'ai également ajouté des commandes pour les amateurs de spam et de gif de chat ❤️
 
 # Installation:
 
@@ -47,6 +47,7 @@ Le terminal continuera d'afficher des informations, lors de l'execution des comm
 - "Celine" => Renvoie un mp4
 - "Kounalis" => Renvoie une image.png du dossier image
 - "+1" => Renvoie une image.png du dossier image
+- "Windows => Renvoie un gif
 - "Ambre" => Renvoie un message et un gif 😉
 - "Fanny" => Renvoie une [vidéo youtube](https://www.youtube.com/watch?v=wyU4Oa7t6SE)
 - "Nico" =>  Renvoie une [vidéo youtube](https://www.youtube.com/watch?v=OtF9c4dZyR0)
