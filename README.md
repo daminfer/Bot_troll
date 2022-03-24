@@ -12,6 +12,11 @@ J'ai également ajouté des commandes pour les amateurs de spam et de gif de cha
 - [Python Module requests](https://fr.python-requests.org/en/latest/user/install.html) => ``` pip install requests ```
 - [Pillow(PIL)](https://pillow.readthedocs.io/en/stable/installation.html) => ``` python3 -m pip install --upgrade pip ``` et ``` python3 -m pip install --upgrade Pillow ```
 
+Avant de lancer le bot, initialiser un dossier de projet:
+```
+npm init
+```
+
 ⚠️ATTENTION: Le fichier config.json doit être remplie par vos soin:
 
 ```
